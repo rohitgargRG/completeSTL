@@ -1,0 +1,70 @@
+-- Vectors are same as dynamic arrays with the ability to resize themselves automatically when an element is inserted or deleted.
+
+-- syntax - vector<dataType> vectorName;
+
+-- ************ initialisation ***********
+    1) Initialization Using List - vector<dataType> name({ value1, value2, value3 ....});
+    2)  Initialization With a Single Value - vector<datatype> name(size,value);
+    3) Initialization From Another Vector - vector<dataType> name(other_vec); // copying one vector into another
+
+-- ***************************************
+
+-- ************ Iterators ****************
+    -- begin() - points to the first element in vector.
+    -- end()  - point to the next position after last element.
+    -- rbegin() - points to the last element .
+    -- rend() - points the position just before the starting position.
+    -- cbegin() - Returns a constant iterator pointing to the first element in the vector.
+    -- cend() - Returns a constant iterator pointing to the theoretical element that follows the last element in the vector.
+    -- crbegin() , crend().
+
+    NOTE --  begin() provides iterators that can be used to modify the elements if the vector itself is non-const, while cbegin() provides iterators that prevent modification regardless of the const-qualification of the vector.
+
+-- *************************************************
+
+-- ****************  Methods/functions related to size of vector*****************
+
+    1) size() - returns no of elements in vector.
+    2) max_size() - returns the maximum no of elements that the vector can hold.
+    3) capacity() -  Returns the size of the storage space currently allocated to the vector expressed as number of elements.
+            capacity = size + remaining empty spaces.
+            capacity >= size of vector.
+    4) resize(n) - resizes the vector to n size.
+    5) empty()  - returns whether the vector is empty or not. (true / false)
+    6) shrink_to_fit() - Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
+    7) reserve()  - Requests that the vector capacity be at least enough to contain n elements.
+
+-- **********************************************************************************
+
+-- ***************** Methods/functions related to memory access **************************
+    1) at(index) - it returns the reference to the index. used to access value at a particular index.
+    2) front()  - returns reference to the first element.
+    3) back() - returns reference to the last element.
+
+-- ***************************************************************************************
+
+-- ************************* Modifiers ***************************************
+
+    1) assign() - It assigns new value to the vector elements by replacing old ones.
+    2) push_back(element) - adds element to the last of vector. 
+    3) pop_back(element) - removes element from the end of vector.
+    4) insert() - it inserts new  element before the before the element at the specifies position.
+            -- Insert an element at the given index -> v.insert(position,value) 
+            -- Insert an element multiple times -> v.insert(position,size,value)
+            -- Insert the Range of Elements at Given Index -> v.insert(position, iterator1, iterator2)
+    5) erase() - erase an element or range in vector from a specified posn.
+            -- vector_name.erase(position)
+            -- vector_name.erase(starting_position, ending_position)
+    6) swap() - swaps the content of two vectors of same type irrespective of their size.
+            -- v1.swap(v2)
+    7) clear() - deletes all elements of a vector and make its size to 0.
+            -- v.clear()
+    8) emplace() - inserts an element at any posn.
+            -- v.emplace(posn,value)
+    9) emplace_back() - similar to push_back , It has a strong exception guarantee , performance is better as compared to push_back.
+
+    NOTE - wherever we are taking range , it excludes the last element.
+
+    ******************************************************************************
+
+
