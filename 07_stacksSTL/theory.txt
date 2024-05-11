@@ -1,0 +1,11 @@
+-- stack STL - 
+    -- Stack uses an encapsulated object of either vector or deque (by default) or list (sequential container class) as its underlying container, providing a specific set of member functions to access its elements. 
+
+    -- functions - 
+        -- push(x) , pop(x) , top() , size() , empty() , st1.swap(st2)
+        -- TC - O(1)
+        -- SC - O(N) ?
+
+-- can we initialise a stack?
+    -- If you want to initialize a stack with specific elements, you can use a std::vector and then construct the stack from it.
+    -- stack<int> st(vec.begin(),vec.end());

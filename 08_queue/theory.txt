@@ -1,0 +1,4 @@
+-- first in first out (FIFO) type of arrangement.
+--  NOTE - queue and stack have both methods front() and back().
+-- Time complexity: O(n)
+-- space complexity: O(n)

@@ -1,0 +1,11 @@
+-- Deque - 
+    -- feature of expansion and contraction on both ends.
+
+    -- are more efficient in case of insertion and deletion.
+
+    -- Double-ended queues are a special case of queues where insertion and deletion operations are possible at both the ends.
+
+    -- same as vectors 
+    -- push_front / pop_front methods are added.
+
+    -- syntax : deque<datatype> name;

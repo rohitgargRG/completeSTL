@@ -1,0 +1,32 @@
+--  first element of the queue is either the greatest or the smallest of all elements in the queue.
+
+-- elements are in non-increasing or non-decreasing order .
+
+-- ach element of the queue has a priority.
+
+-- the top element is always the greatest by default. i.e, by default it is stored in ascending order. 
+
+-- STL Priority Queue is the implementation of Heap Data Structure.
+
+-- A Heap is a complete binary tree data structure that satisfies the heap property: for every node, the value of its children is less than or equal to its own value. Heaps are usually used to implement priority queues, where the smallest (or largest) element is always at the root of the tree.
+
+-- min heap - root is the smallest element in tree.
+            - hence childrens of every node is greater than or equal to the node.
+            - syntax - priority_queue<int,vector<int>,greater<int>> name;****
+            - it will print in ascending order .
+            - topmost element will be least element.
+
+Note: The above syntax may be difficult to remember, so in case of numeric values, we can multiply the values with -1 and use max heap to get the effect of min heap. Not only that we can use custom sorting method by replacing greater with custom comparator function.
+
+-- max heap(default) - root is the largest element in tree.
+                     - hence childrens of every node is less than or eqaul to the node.
+                     - syntax - priority_queue<int> name.
+                     - topmost element will be the largest element.
+                     - it will print in descending order.
+
+
+NOTE  - there is no front() method here.
+      - We can only access the top element in the priority queue.
+
+Time Complexity - push() , pop() , emplace()  -- O(logN)  , sc - O(1)
+                - other - O(1) TC and Sc - O(1).
