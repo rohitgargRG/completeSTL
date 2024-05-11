@@ -1,0 +1,11 @@
+-- Lists are sequence containers that allow non-contiguous memory allocation.
+    -- ex - singly and doubly linked list.
+
+-- insertion and deletion are quick (constant time).
+    -- syntax - list <data-type> name_of_list;
+
+-- same as vector.
+
+-- *************** OPERATIIONS *******************
+
+    -- front() , back() , push_front() , push_back() , pop_front() , pop_bak() ,insert() , size() , begin() , end().
