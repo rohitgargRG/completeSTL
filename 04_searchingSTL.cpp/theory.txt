@@ -1,0 +1,16 @@
+-- binary_search(v.begin(), v.end(), key):
+        -- Searches for a key in a sorted vector using binary search.
+        -- This function returns true if the element is present in the container, else returns false.
+
+-- lower_bound(v.begin(),v.end(),key):
+        -- Returns pointer to the position of key if the container contains only one occurrence of key.
+        -- Returns a pointer to the first position of key if the container contains multiple occurrences of key.
+        -- Returns pointer to the position of a number just higher than key, if the container does not contain an occurrence of key.
+        -- Subtracting the first position i.e vect.begin() from the pointer, returns the actual index.
+
+-- upper_bound(v.begin(),v.end(),key):
+        -- Returns pointer to the position of next higher number than key if the container contains one occurrence of key.
+        -- Returns pointer to the first position of the next higher number than the last occurrence of key if the container contains multiple occurrences of key.
+        -- Returns pointer to position of next higher number than key if the container does not contain an occurrence of key.
+
+        NOTE - in every case upper bound returns the next higher element only.

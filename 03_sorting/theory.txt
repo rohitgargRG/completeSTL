@@ -1,0 +1,18 @@
+-- sort STL -
+    -- sort in ascending order - sort(v.begin(),v.end())
+
+    -- sort in descending order - sort(v.begin(),v.end(),greater<>())
+
+    -- sort a range in vector - sort(v.begin()+i,v.begin()+j)  {sorts index i -> j-1}
+        
+
+-- custom sort - use comparator function
+        -- sort(v.begin(),v.end(),comp)
+
+Q) How to create a comp function?
+   - create a function of bool type.
+   - this function will have two arguments.
+   - datatype of these arguments will be datatype of vector.***
+   - now according to your constraint compare/do req operations on the arguments.
+   - return true , if condition holds.
+   - else return false.
