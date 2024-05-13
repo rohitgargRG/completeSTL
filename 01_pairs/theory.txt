@@ -1,0 +1,57 @@
+-- pair is used to combine together two values that may be of different data types.(or same data types)
+
+-- NOTE - We Can Use any data type.
+
+-- The first element is referenced as ‘first’ and the second element as ‘second’ and the order is fixed (first, second).
+
+-- syntax - pair <data_type1, data_type2> Pair_name
+
+-- initialize a pair 
+
+    1) pair <data_type1, data_type2> Pair_name (value1, value2);
+    
+    2) Another way to initialize a pair is by using the make_pair() function.
+            -- pair_name = make_pair(val1,val2); 
+    
+    3) Another way is directly using   
+            -- pair_name = {value1,value2}
+
+-- NOTE - ********* (important) *********
+
+    -- default value of int,float,double,long  datatypes in pair is 0.
+    -- rest other datatype prints nothing(NULL).
+
+************************************************************
+
+-- functions in pair
+
+    1) make_pair() - allows to create a pair with some values explicitly.
+        -- syntax - 
+            pair_name = make_pair(value1,value2);
+
+    2) swap() - use to swap values of two pairs.
+        NOTE - pairs must be of the same type.
+            -- syntax - pair1.swap(pair2)
+
+        -- the swap function will swap the pair1.first with pair2.first and pair1.second with pair2.second. 
+
+        NOTE - for swapping also , pairs must have same type.
+        (pair<int,char> cannot be swapped with pair<char,int>)
+
+    3) tie() - jo bhi apne pair ki values hai unhe 2 variables ke andar copy kr dega.
+            -- syntax - tie(int &, int &) = pair1;
+            -- mostly used when there is pair of pairs.
+            -- two variants of the tie, with and without “ignore”.
+            -- “ignore” keyword ignores a particular tuple element from getting unpacked.
+
+    4) get() - extract a variable in pair using tuple like interface.
+        
+        -- As an alternative to using first and second, you can use std::get() to access elements in a pair. Pass the index (0 for first, 1 for second) as a template parameter: 
+
+        -- syntax for accessing elements - get<0>(p) , get<1>(p)
+
+-- Time complexity: O(1).
+
+-- Auxiliary space: O(1). 
+
+-- operators(=, ==, !=, >=, <=) in Pair  can be used for performing operations.
