@@ -1,0 +1,82 @@
+sets -
+
+    -- each element is unique.
+    -- values are stored in a sorted order i.e. either ascending or descending.
+    -- by default its ascending order.
+    -- syntax - set <data_type> set_name.
+
+    -- we use insert() function here.
+    -- there is no push() function in set.
+
+    -- Time complexity: O(N)
+    -- Space Complexity: O(N)
+
+    -- To sort in descending order.
+    -- syntax - set<data_type, greater<data_type>> set_name.
+
+    -- storing in descending order using comparator function
+    -- set<int, bool(*)(int,int) > s4(comp);
+
+    -- NOTE - the values in a set are immutable.The value of the element cannot be modified once it is added to the set, though it is possible to remove and then add the modified value of that element.
+
+    -- Sets follow the Binary search tree implementation.
+
+    -- The values in a set are unindexed.
+
+    -- basic operations - insert(),size(),begin(),end(),max_size(),empty(),clear(),swap()
+    -- find(ele) - syntax -> setName.find(ele);
+                 - The function returns an iterator which points to the element which is searched in the set container.
+                 - If the element is not found, then the iterator points to the position just after the last element in the set.
+
+    -- count(ele) - returns 1/0 based on whether the element is present in set or not.
+
+    -- lower_bound(ele) - syntax -> set_name.lower_bound(key)
+                        - The function returns an iterator pointing to the element in the container which is equivalent to k passed in the parameter.
+                        -  In case k is not present in the set container, the function returns an iterator pointing to the immediate next element which is just greater than k.
+                        - If the key passed in the parameter exceeds the maximum value in the container, then the iterator returned is equivalent to s.end().
+
+    -- upper-bound() - syntax - set_name.upper_bound(key).
+                     - returns next higher element always.
+
+    -- rest functions similar to vectors.
+    
+    -- Time Complexity  - O(logN).
+**********************************************************************
+
+unordered_set() - 
+    
+    -- To store the elements in an unsorted(random) order.
+    -- implemented using a hash table .
+    -- All operations on the unordered_set take constant time O(1).
+    -- O(n) in worst case.
+    -- syntax - unordered_set<data_type> set_name;
+
+    -- rest same as set.
+
+NOTE - The Unordered_set allows only unique keys, for duplicate keys unordered_multiset should be used.
+
+***************************************************************************
+
+multiset - 
+
+    -- similar to set , but multiple elements can have same values.
+    -- i.e , repetition allowed.
+    -- elements are stored in sorted order.
+
+    -- rest same as sets.
+    -- TC - O(1) 
+    -- insert() , erase()  - O(logn).
+
+    -- syntax - multiset<int> st;
+                multiset<int,greater<int>> st;
+
+    -- a.erase(element) – Remove all instances of element from multiset having the same value
+    -- a.erase(a.find(ele)) – Remove only one instance of element from multiset having same value
+    -- TC - O(logN).
+    -- SC - O(1).
+
+*****************************************************************************
+For Desending sets - 
+
+-- lower_bound() - returns just smaller element reference , if element is not present.
+-- upper_bound() - also returns just smaller element reference, if not present.
