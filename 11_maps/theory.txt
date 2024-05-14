@@ -1,0 +1,70 @@
+Maps - 
+
+    -- store elements in a mapped fashion.
+    -- Each element has a key value and a mapped value.
+    -- all the keys are always unique.
+
+    -- functions() -
+        -- begin() , end() , size() , max_size() , empty() , clear()
+        -- pair_insert(key,value) - Adds a new element to the map.
+        -- erase(iterator position) – Removes the element at the position pointed by the iterator.
+        -- erase(key)– Removes the key - value from the map.
+                     - name.erase(key).
+        -- erasing a range -
+                -- syntax - map_name.erase(iterator position1, iterator position2)
+
+    -- syntax - map<key,value> name;
+    -- to insert - name[key] = value;  ********
+
+    -- NOTE - elements are sorted according to key value.(by default ascending)
+
+    -- Time complexity: O(n) where n is the size of map.
+
+    -- Auxiliary Space: O(n)
+
+    -- accessing key and value
+        -- it -> first to access key.
+        -- it -> second to access value.
+
+    -- copying key - values from one map into another.
+    -- map<int,int> m2(m1.begin(),m1.end());
+
+    -- to directly access value we can print map_name[key].
+
+-- lower_bound() in map
+    -- returns an iterator pointing to the key in the container.
+    -- syntax - map_name.lower_bound(key)
+    -- In case k is not present in the map container, the function returns an iterator pointing to the immediate next element which is just greater than k.
+
+// ***************************************************************************
+
+Unordered_map-
+
+--  implemented using Hash Table.
+--  the cost of search, insert, and delete from the hash table is O(1). 
+--  Note: In the worst case, its time complexity can go from O(1) to O(n), especially for big prime numbers. In this situation, it is highly advisable to use a map instead to avoid getting a TLE(Time Limit Exceeded) error.
+
+-- syntax - unordered_map<key,value> name;
+-- rest all same as map.
+-- it is not sorted.
+
+-- functions - 
+    -- at(key) - returns the reference to the value with the element as key k.
+    -- bucket() - Returns the bucket number where the element with the key k is located in the map.
+                - bucketNumber - slot at which it is stored.
+
+-- suppose you have inserted two diff values with the same key , then the value which is inserted at last with that key will be stored.
+    i.e, previous values will  be override. (since keys can't repeat)
+
+-- eg - mpp[4] = 300
+        mpp[4] = 400
+        -- key 4 will store value 400 , finally.
+
+***********************************************************************************************
+
+multimap - 
+        -- Multimap is similar to a map with the addition that multiple elements can have the same keys.
+        -- multimap keeps all the keys in sorted order always.
+
+        -- count(key): Returns the number of elements with a specific key.
+        -- equal_range(key): Returns a range containing all elements with a specific key.

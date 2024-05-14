@@ -1,0 +1,26 @@
+*min_element - 
+
+    -- For calculating the smallest of all the elements in a given list.
+    --  returns an iterator pointing to the element with the smallest value in the range [first, last).
+    -- If more than one element satisfies the condition of being the smallest, the iterator returned points to the first of such elements.
+
+    -- syntax - int ans = *min_element(iterator1 , iterator2);
+                -- we can also find min element in a particular range.
+
+*max_element - 
+
+    -- sam as *min_element , but it will give maximum element.
+    -- syntax - *max_element(iterator1 , iterator 2);
+
+__builtin_popcount(num) -
+
+    -- used to count the no of 1's in the binary form of a positive integer.
+
+    -- for long long use __builtin_popcountll(num)
+
+-- bool next_permutation()
+
+    -- syntax - next_permutation(iterator 1,iterator 2);
+    --  used to rearrange the elements in the range [first, last) into the next lexicographically greater permutation.
+    -- always sort the string/array first and then use this .
+
