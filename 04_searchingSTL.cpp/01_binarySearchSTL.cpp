@@ -25,6 +25,12 @@ int main(){
 
     cout<<lower_bound(v3.begin(),v3.end(),key) - v3.begin()<<"\n"; // 1 (just bigger than key) (30)
 
+
+     // case 4 - key doesn't occur and all the elements on vector are less than key
+    cout<<"lower : "<<lower_bound(v3.begin(),v3.end(),100) - v3.begin()<<"\n"; // 4
+
+     // case 4 - key doesn't occur and all the elements on vector are greater than key
+    cout<<lower_bound(v3.begin(),v3.end(),1) - v3.begin()<<"\n"; // 0
     // ***************************************************************************
 
 
@@ -39,6 +45,11 @@ int main(){
     // case 3 - no occurrence of key
     cout<<upper_bound(v3.begin(),v3.end(),key) - v3.begin()<<"\n"; // 1
 
+    // case 4 - key doesn't occur and all the elements on vector are less than key
+    cout<<upper_bound(v3.begin(),v3.end(),100) - v3.begin()<<"\n"; // 4
 
+     // case 4 - key doesn't occur and all the elements on vector are greater than key
+    cout<<upper_bound(v3.begin(),v3.end(),1) - v3.begin()<<"\n"; // 0
+    
     return 0;
 }
