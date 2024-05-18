@@ -2,7 +2,7 @@
 
 -- elements are in non-increasing or non-decreasing order .
 
--- ach element of the queue has a priority.
+-- each element of the queue has a priority.
 
 -- the top element is always the greatest by default. i.e, by default it is stored in ascending order. 
 

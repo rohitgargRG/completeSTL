@@ -8,4 +8,4 @@
 
 -- *************** OPERATIIONS *******************
 
-    -- front() , back() , push_front() , push_back() , pop_front() , pop_bak() ,insert() , size() , begin() , end().
+    -- front() , back() , push_front() , push_back() , pop_front() , pop_back() ,insert() , size() , begin() , end().

@@ -76,7 +76,7 @@ multiset -
     -- SC - O(1).
 
 *****************************************************************************
-For Desending sets - 
+For Descending sets - 
 
 -- lower_bound() - returns just smaller element reference , if element is not present.
 -- upper_bound() - also returns just smaller element reference, if not present.

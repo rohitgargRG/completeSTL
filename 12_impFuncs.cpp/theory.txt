@@ -9,7 +9,7 @@
 
 *max_element - 
 
-    -- sam as *min_element , but it will give maximum element.
+    -- same as *min_element , but it will give maximum element.
     -- syntax - *max_element(iterator1 , iterator 2);
 
 __builtin_popcount(num) -

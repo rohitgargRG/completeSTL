@@ -48,7 +48,7 @@
     1) assign() - It assigns new value to the vector elements by replacing old ones.
     2) push_back(element) - adds element to the last of vector. 
     3) pop_back(element) - removes element from the end of vector.
-    4) insert() - it inserts new  element before the before the element at the specifies position.
+    4) insert() - it inserts new  element before the element at the specifies position.
             -- Insert an element at the given index -> v.insert(position,value) 
             -- Insert an element multiple times -> v.insert(position,size,value)
             -- Insert the Range of Elements at Given Index -> v.insert(position, iterator1, iterator2)
